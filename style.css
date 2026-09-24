@@ -1,0 +1,88 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border: grey 1px solid;
+    border-radius: 10px;
+}
+
+.title {
+    text-align: center;
+}
+
+.informacoes input {
+    width: 100%;
+    border-radius: 5px;
+    height: 30px;
+    border: 1px rgb(223, 223, 223) solid;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date input {
+    width: 100%;
+}
+
+.date-idade {
+    width: 50%;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input {
+    padding: 2px 5px;
+}
+
+label {
+    color: rgb(58, 58, 58);
+    font-size: 15px;
+}
+
+hr {
+    width: 100%;
+}
+
+select {
+    height: 30px;
+    color: rgb(58, 58, 58);
+
+}
+
+button {
+    height: 40px;
+    background-color: rgb(5, 75, 5);
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+}
+
+
+h4 {
+    font-size: 15px;
+}
+
+h3 {
+    margin: 0px;
+}
+
+.title h2 {
+    margin: 0px;
+}
+
+textarea {
+    resize: none;
+}

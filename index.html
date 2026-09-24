@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <div class="title">
+            <h2>🎮 Campeonato Mini Games</h2>
+            <p>Inscrição de participantes</p>
+        </div>
+
+        <div class="informacoes">
+            <h3>Dados do participante</h3>
+            <label for="nome">Nome completo</label>
+            <input type="text" placeholder="Digite seu nome" id="nome" maxlength="70" required>
+
+            <div class="date">
+                <div class="date-idade">
+                    <label for="idade">Idade</label>
+                    <input type="number" placeholder="Sua idade" id="idade" min="1" max="120" required>
+                </div>
+
+                <div class="date-nascimento"> <label for="data" required>Data de nascimento</label>
+                    <input type="date" id="data">
+                </div>
+            </div>
+
+
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="seuemail@exemplo.com" id="email" required>
+        </div>
+        <hr />
+        <div class="requests">
+            <h3>Preferências</h3>
+            <div class="requests-dificuldade">
+                <h4>Dificuldade</h4>
+                <input type="radio" id="facil" name="dificuldade">
+                <label for="facil">Fácil</label>
+
+                <input type="radio" id="medio" name="dificuldade">
+                <label for="medio">Médio</label>
+
+                <input type="radio" id="dificil" name="dificuldade">
+                <label for="dificil">Difícil</label>
+            </div>
+            <div class="requests-jogos">
+                <h4>Jogos favoritos</h4>
+                <input type="checkbox" id="jogo-velha">
+                <label for="jogo-velha">Jogo da velha</label>
+
+                <input type="checkbox" id="sudoku">
+                <label for="sudoku">Sudoku</label>
+
+                <input type="checkbox" id="mario">
+                <label for="mario">Mario Bros</label>
+            </div>
+        </div>
+
+        <label for="personagens" style="color: grey; font-weight: bold; font-size: 12px;">Personagem</label>
+        <select id="personagens" required>
+            <option value="">Escolha um personagem:</option>
+            <option value="mario">Mario</option>
+            <option value="luigi">Luigi</option>
+            <option value="peach">Peach</option>
+        </select>
+        <br>
+        <label for="mensagem" style="color: grey; font-weight: bold; font-size: 12px;">Mensagem para o
+            campeonato</label>
+        <textarea id="mensagem" rows="3" cols="30" placeholder="Escreva sua mensagem..." required></textarea>
+
+        <button type="submit" onclick="submeter()">Cadastrar participante</button>
+        <p id="resposta"> </p>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
